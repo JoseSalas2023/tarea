@@ -24,10 +24,12 @@ public class AuthController {
     }
 
     @PostMapping("/addUser")
-    @Operation(summary = "Add user")
+    @Operation(summary = "usuario")
     public ResponseEntity<Object> addUser(@RequestBody UserInfo user){
         return authService.addUser(user);
     }
+
+
 
     @GetMapping("/getAllUser")
     @Operation(summary = "Get all user")
